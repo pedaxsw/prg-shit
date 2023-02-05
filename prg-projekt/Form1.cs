@@ -9,6 +9,7 @@ namespace prg_projekt
             test.Visible = false;
             learn.Visible = false;
             learn_text.Visible = false;
+            learn_start.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +34,8 @@ namespace prg_projekt
             menu_text.Visible = true;
             test.Visible = true;
             learn.Visible = true;
+            learn_start.Visible = false;
+            learn_text.Visible = false;
 
         }
 
@@ -63,6 +66,9 @@ namespace prg_projekt
             menu_text.Visible = false;
             test.Visible = false;
             learn.Visible = false;
+            menu.Visible = true;
+            learn_text.Visible = true;
+            learn_start.Visible = true;
         }
 
         private void learn_text_Click(object sender, EventArgs e)
