@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ST1klGpYanS3tZb7Jvl9pm/igxxxAzOHdiAsc8GTGnJIy2X6tf6iYYYt5DT/1CYD/GNC3WRgHYm5LI2gIEPGog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Danko\\Desktop\\school-prg\\prg-projekt\\prg-projekt\\prg-projekt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danko\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Danko\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Danko\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.13\\microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
+    "C:\\Users\\Danko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.13\\microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
