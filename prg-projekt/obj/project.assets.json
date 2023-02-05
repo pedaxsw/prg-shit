@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danko\\Desktop\\school-prg\\prg-projekt\\prg-projekt\\prg-projekt.csproj",
+      "projectUniqueName": "C:\\Users\\Danko\\Desktop\\restore prg\\prg-shit\\prg-projekt\\prg-projekt.csproj",
       "projectName": "prg-projekt",
-      "projectPath": "C:\\Users\\Danko\\Desktop\\school-prg\\prg-projekt\\prg-projekt\\prg-projekt.csproj",
+      "projectPath": "C:\\Users\\Danko\\Desktop\\restore prg\\prg-shit\\prg-projekt\\prg-projekt.csproj",
       "packagesPath": "C:\\Users\\Danko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danko\\Desktop\\school-prg\\prg-projekt\\prg-projekt\\obj\\",
+      "outputPath": "C:\\Users\\Danko\\Desktop\\restore prg\\prg-shit\\prg-projekt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Danko\\AppData\\Roaming\\NuGet\\NuGet.Config",

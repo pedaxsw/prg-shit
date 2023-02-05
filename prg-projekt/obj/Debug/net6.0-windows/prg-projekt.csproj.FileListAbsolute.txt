@@ -16,3 +16,39 @@ C:\Users\Danko\Desktop\school-prg\prg-projekt\prg-projekt\obj\Debug\net6.0-windo
 C:\Users\Danko\Desktop\school-prg\prg-projekt\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.genruntimeconfig.cache
 C:\Users\Danko\Desktop\school-prg\prg-projekt\prg-projekt\obj\Debug\net6.0-windows\ref\prg-projekt.dll
 C:\Users\Danko\Desktop\school-prg\prg-projekt\prg-projekt\obj\Debug\net6.0-windows\prg_projekt.Properties.Resources.resources
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.exe
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.deps.json
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.runtimeconfig.json
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.dll
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.pdb
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.AssemblyReference.cache
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg_projekt.Form1.resources
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg_projekt.Properties.Resources.resources
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.GenerateResource.cache
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.AssemblyInfoInputs.cache
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.AssemblyInfo.cs
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.CoreCompileInputs.cache
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.dll
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\refint\prg-projekt.dll
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.pdb
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.genruntimeconfig.cache
+C:\Users\Danko\Desktop\Nová složka\prg-shit\prg-projekt\obj\Debug\net6.0-windows\ref\prg-projekt.dll
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.exe
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.deps.json
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.runtimeconfig.json
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.dll
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\bin\Debug\net6.0-windows\prg-projekt.pdb
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.AssemblyReference.cache
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg_projekt.Form1.resources
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg_projekt.Properties.Resources.resources
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.GenerateResource.cache
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.AssemblyInfoInputs.cache
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.AssemblyInfo.cs
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.csproj.CoreCompileInputs.cache
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.dll
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\refint\prg-projekt.dll
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.pdb
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\prg-projekt.genruntimeconfig.cache
+C:\Users\Danko\Desktop\restore prg\prg-shit\prg-projekt\obj\Debug\net6.0-windows\ref\prg-projekt.dll

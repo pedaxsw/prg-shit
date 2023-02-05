@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace prg_projekt
 {
     public partial class Form1 : Form
@@ -10,6 +12,31 @@ namespace prg_projekt
             learn.Visible = false;
             learn_text.Visible = false;
             learn_start.Visible = false;
+
+
+            int correct = 0;
+            int incorrect = 0;
+            Boolean check = false;
+            Dictionary<string, string> swedishDictionary = new Dictionary<string, string>();
+
+            swedishDictionary.Add("bok", "book");
+            swedishDictionary.Add("hej", "hello");
+            swedishDictionary.Add("sverige", "sweden");
+            swedishDictionary.Add("bil", "car");
+            swedishDictionary.Add("apelsine", "orange");
+
+            foreach (KeyValuePair<string, string> word in swedishDictionary)
+            {
+                if ((yourAnswer.Text == word.Value) & (check == true))
+                {
+                    correct++;
+                }
+                else
+                {
+                    incorrect++;
+                }
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +99,16 @@ namespace prg_projekt
         }
 
         private void learn_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void learning_next_Click(object sender, EventArgs e)
+        {
+            Boolean check = true;
+        }
+
+        private void yourAnswer_TextChanged(object sender, EventArgs e)
         {
 
         }

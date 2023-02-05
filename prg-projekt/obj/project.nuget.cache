@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ST1klGpYanS3tZb7Jvl9pm/igxxxAzOHdiAsc8GTGnJIy2X6tf6iYYYt5DT/1CYD/GNC3WRgHYm5LI2gIEPGog==",
+  "dgSpecHash": "qccMJ5OB/nuzBOFCrOEzuiLNi+TZVM9qZD5Eb2CmjRO5p3QF7LslKdx+JhgbNUOdbp5SbgoTrhMd9/Nu6/aezA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Danko\\Desktop\\school-prg\\prg-projekt\\prg-projekt\\prg-projekt.csproj",
+  "projectFilePath": "C:\\Users\\Danko\\Desktop\\restore prg\\prg-shit\\prg-projekt\\prg-projekt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Danko\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.13\\microsoft.windowsdesktop.app.ref.6.0.13.nupkg.sha512",
     "C:\\Users\\Danko\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.13\\microsoft.netcore.app.ref.6.0.13.nupkg.sha512",

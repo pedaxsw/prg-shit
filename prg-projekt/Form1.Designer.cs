@@ -37,6 +37,8 @@
             this.test = new System.Windows.Forms.Button();
             this.learn_text = new System.Windows.Forms.Label();
             this.learn_start = new System.Windows.Forms.Button();
+            this.learning_next = new System.Windows.Forms.Button();
+            this.yourAnswer = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,12 +150,32 @@
             this.learn_start.UseVisualStyleBackColor = false;
             this.learn_start.Click += new System.EventHandler(this.learn_Click);
             // 
+            // learning_next
+            // 
+            this.learning_next.Location = new System.Drawing.Point(800, 323);
+            this.learning_next.Name = "learning_next";
+            this.learning_next.Size = new System.Drawing.Size(195, 75);
+            this.learning_next.TabIndex = 8;
+            this.learning_next.Text = "next";
+            this.learning_next.UseVisualStyleBackColor = true;
+            this.learning_next.Click += new System.EventHandler(this.learning_next_Click);
+            // 
+            // yourAnswer
+            // 
+            this.yourAnswer.Location = new System.Drawing.Point(451, 199);
+            this.yourAnswer.Name = "yourAnswer";
+            this.yourAnswer.Size = new System.Drawing.Size(210, 23);
+            this.yourAnswer.TabIndex = 9;
+            this.yourAnswer.TextChanged += new System.EventHandler(this.yourAnswer_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.yourAnswer);
+            this.Controls.Add(this.learning_next);
             this.Controls.Add(this.learn_text);
             this.Controls.Add(this.test);
             this.Controls.Add(this.learn_start);
@@ -183,5 +205,7 @@
         private Button test;
         private Label learn_text;
         private Button learn_start;
+        private Button learning_next;
+        private TextBox yourAnswer;
     }
 }
