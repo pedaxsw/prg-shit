@@ -32,6 +32,8 @@ namespace prg_projekt
             swedishDictionary.Add("bil", "car");
             swedishDictionary.Add("apelsine", "orange");
 
+            selected.Text = swedishDictionary.ToString();
+
             /*
             foreach (KeyValuePair<string, string> word in swedishDictionary)
             {
