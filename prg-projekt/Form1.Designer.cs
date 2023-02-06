@@ -41,6 +41,8 @@
             this.selected = new System.Windows.Forms.Label();
             this.start_learning = new System.Windows.Forms.Button();
             this.learning_text = new System.Windows.Forms.Label();
+            this.correctL = new System.Windows.Forms.Label();
+            this.wrongL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,12 +195,38 @@
             this.learning_text.TabIndex = 12;
             this.learning_text.Text = "Translate the Swedish word to English:";
             // 
+            // correctL
+            // 
+            this.correctL.AutoSize = true;
+            this.correctL.BackColor = System.Drawing.Color.White;
+            this.correctL.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.correctL.Location = new System.Drawing.Point(36, 124);
+            this.correctL.Name = "correctL";
+            this.correctL.Size = new System.Drawing.Size(128, 40);
+            this.correctL.TabIndex = 13;
+            this.correctL.Text = "Correct: ";
+            this.correctL.Click += new System.EventHandler(this.correctL_Click);
+            // 
+            // wrongL
+            // 
+            this.wrongL.AutoSize = true;
+            this.wrongL.BackColor = System.Drawing.Color.White;
+            this.wrongL.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.wrongL.Location = new System.Drawing.Point(36, 176);
+            this.wrongL.Name = "wrongL";
+            this.wrongL.Size = new System.Drawing.Size(122, 40);
+            this.wrongL.TabIndex = 14;
+            this.wrongL.Text = "Wrong: ";
+            this.wrongL.Click += new System.EventHandler(this.wrongL_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.wrongL);
+            this.Controls.Add(this.correctL);
             this.Controls.Add(this.learning_text);
             this.Controls.Add(this.start_learning);
             this.Controls.Add(this.selected);
@@ -236,5 +264,7 @@
         private Label selected;
         private Button start_learning;
         private Label learning_text;
+        private Label correctL;
+        private Label wrongL;
     }
 }

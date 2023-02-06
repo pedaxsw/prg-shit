@@ -34,6 +34,8 @@ namespace prg_projekt
             start_learning.Visible = false;
             learning_next.Visible = false;
             learning_text.Visible = false;
+            wrongL.Visible = false;
+            correctL.Visible = false;
 
 
         }
@@ -79,9 +81,16 @@ namespace prg_projekt
             yourAnswer.Visible = false;
             learning_next.Visible = false;
             learning_text.Visible = false;
+            wrongL.Visible = false;
+            correctL.Visible = false;
 
 
             menu.Text = "Menu";
+            correct = 0;
+            wrong = 0;
+
+            wrongL.Text = "Wrong: ";
+            correctL.Text = "Correct: ";
           
 
         }
@@ -118,6 +127,7 @@ namespace prg_projekt
             start_learning.Visible = true;
             learning_text.Visible = false;
 
+
         }
 
         private void learn_text_Click(object sender, EventArgs e)
@@ -135,13 +145,16 @@ namespace prg_projekt
             }
             selected.Text = dictionary[currentIndex].Key;
 
-            if (dictionary[currentIndex].Key == dictionary[currentIndex].Value)
+            int ubrany = currentIndex - 1;
+            if (yourAnswer.Text == dictionary[ubrany].Value)
             {
                 correct += 1;
+                correctL.Text = "Correct: " + correct;
             }
             else
-            {
+            {   //"Wrong: " + wrong;
                 wrong += 1;
+                wrongL.Text = "Wrong: " + wrong;
             }
         }
 
@@ -158,6 +171,8 @@ namespace prg_projekt
             learning_next.Visible= true;
             learn_text.Visible= false;
             learning_text.Visible = true;
+            wrongL.Visible = true;
+            correctL.Visible = true;
 
 
 
@@ -175,6 +190,16 @@ namespace prg_projekt
             // set the first word
             currentIndex = 0;
             selected.Text = dictionary[currentIndex].Key;
+        }
+
+        private void correctL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wrongL_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
