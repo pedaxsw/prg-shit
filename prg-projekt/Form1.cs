@@ -145,6 +145,15 @@ namespace prg_projekt
             }
             selected.Text = dictionary[currentIndex].Key;
 
+            if (currentIndex == dictionary.Count - 1)
+            {
+                learning_next.Visible = false;
+            }
+            else
+            {
+                learning_next.Visible = true;
+            }
+
             int ubrany = currentIndex - 1;
             if (yourAnswer.Text == dictionary[ubrany].Value)
             {
@@ -156,6 +165,7 @@ namespace prg_projekt
                 wrong += 1;
                 wrongL.Text = "Wrong: " + wrong;
             }
+            yourAnswer.Text = "";
         }
 
         private void yourAnswer_TextChanged(object sender, EventArgs e)
