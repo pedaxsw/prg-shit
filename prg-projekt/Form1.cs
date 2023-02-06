@@ -1,9 +1,26 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Windows.Forms;
+
 namespace prg_projekt
 {
     public partial class Form1 : Form
     {
+        private List<KeyValuePair<string, string>> dictionary = new List<KeyValuePair<string, string>>()
+        {
+            new KeyValuePair<string, string>("hej", "hello"),
+            new KeyValuePair<string, string>("tack", "thank you"),
+            new KeyValuePair<string, string>("god dag", "good day"),
+            new KeyValuePair<string, string>("hej då", "goodbye"),
+            new KeyValuePair<string, string>("ja", "yes"),
+            new KeyValuePair<string, string>("nej", "no"),
+        };
+        private int wrong = 0;
+        private int correct = 0;
+        private int currentIndex = 0;
+        private Random random = new Random();
+
         public Form1()
         {
             InitializeComponent();
@@ -15,40 +32,24 @@ namespace prg_projekt
             learning_next.Visible = false;
             selected.Visible = false;
             start_learning.Visible = false;
-
+            learning_next.Visible = false;
+            learning_text.Visible = false;
 
 
         }
 
-        private void vyber()
+
+        private void nextButton_Click(object sender, EventArgs e)
         {
-            int correct = 0;
-            int incorrect = 0;
-            Dictionary<string, string> swedishDictionary = new Dictionary<string, string>();
-
-            swedishDictionary.Add("bok", "book");
-            swedishDictionary.Add("hej", "hello");
-            swedishDictionary.Add("sverige", "sweden");
-            swedishDictionary.Add("bil", "car");
-            swedishDictionary.Add("apelsine", "orange");
-
-            selected.Text = swedishDictionary.ToString();
-
-            /*
-            foreach (KeyValuePair<string, string> word in swedishDictionary)
+            // move to the next word in the queue
+            currentIndex++;
+            if (currentIndex == dictionary.Count)
             {
-                if (yourAnswer.Text == word.Value) 
-                {
-                    correct++;
-                }
-                else
-                {
-                    incorrect++;
-                }
-            
+                currentIndex = 0;
             }
-            */
+            selected.Text = dictionary[currentIndex].Key;
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,6 +77,12 @@ namespace prg_projekt
             start_learning.Visible = false;
             selected.Visible = false;
             yourAnswer.Visible = false;
+            learning_next.Visible = false;
+            learning_text.Visible = false;
+
+
+            menu.Text = "Menu";
+          
 
         }
 
@@ -109,7 +116,8 @@ namespace prg_projekt
             menu.Visible = true;
             learn_text.Visible = true;
             start_learning.Visible = true;
-           
+            learning_text.Visible = false;
+
         }
 
         private void learn_text_Click(object sender, EventArgs e)
@@ -119,7 +127,22 @@ namespace prg_projekt
 
         private void learning_next_Click(object sender, EventArgs e)
         {
-          
+            // move to the next word in the queue
+            currentIndex++;
+            if (currentIndex == dictionary.Count)
+            {
+                currentIndex = 0;
+            }
+            selected.Text = dictionary[currentIndex].Key;
+
+            if (dictionary[currentIndex].Key == dictionary[currentIndex].Value)
+            {
+                correct += 1;
+            }
+            else
+            {
+                wrong += 1;
+            }
         }
 
         private void yourAnswer_TextChanged(object sender, EventArgs e)
@@ -132,7 +155,26 @@ namespace prg_projekt
             selected.Visible= true;
             yourAnswer.Visible= true;
             start_learning.Visible= false;
-            vyber();
+            learning_next.Visible= true;
+            learn_text.Visible= false;
+            learning_text.Visible = true;
+
+
+
+            // shuffle the order of words in the dictionary
+            int n = dictionary.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                KeyValuePair<string, string> value = dictionary[k];
+                dictionary[k] = dictionary[n];
+                dictionary[n] = value;
+            }
+
+            // set the first word
+            currentIndex = 0;
+            selected.Text = dictionary[currentIndex].Key;
         }
     }
 }

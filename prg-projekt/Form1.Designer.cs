@@ -40,6 +40,7 @@
             this.yourAnswer = new System.Windows.Forms.TextBox();
             this.selected = new System.Windows.Forms.Label();
             this.start_learning = new System.Windows.Forms.Button();
+            this.learning_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(284, 97);
             this.menu.TabIndex = 1;
-            this.menu.Text = "Menu";
+            this.menu.Text = "Go to Menu";
             this.menu.UseVisualStyleBackColor = false;
             this.menu.Click += new System.EventHandler(this.menu_Click);
             // 
@@ -141,12 +142,14 @@
             // 
             // learning_next
             // 
+            this.learning_next.BackColor = System.Drawing.Color.White;
+            this.learning_next.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.learning_next.Location = new System.Drawing.Point(800, 323);
             this.learning_next.Name = "learning_next";
             this.learning_next.Size = new System.Drawing.Size(195, 75);
             this.learning_next.TabIndex = 8;
             this.learning_next.Text = "next";
-            this.learning_next.UseVisualStyleBackColor = true;
+            this.learning_next.UseVisualStyleBackColor = false;
             this.learning_next.Click += new System.EventHandler(this.learning_next_Click);
             // 
             // yourAnswer
@@ -180,12 +183,23 @@
             this.start_learning.UseVisualStyleBackColor = false;
             this.start_learning.Click += new System.EventHandler(this.start_learning_Click);
             // 
+            // learning_text
+            // 
+            this.learning_text.AutoSize = true;
+            this.learning_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.learning_text.Location = new System.Drawing.Point(275, 53);
+            this.learning_text.Name = "learning_text";
+            this.learning_text.Size = new System.Drawing.Size(521, 40);
+            this.learning_text.TabIndex = 12;
+            this.learning_text.Text = "Translate the Swedish word to English:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.learning_text);
             this.Controls.Add(this.start_learning);
             this.Controls.Add(this.selected);
             this.Controls.Add(this.yourAnswer);
@@ -221,5 +235,6 @@
         private TextBox yourAnswer;
         private Label selected;
         private Button start_learning;
+        private Label learning_text;
     }
 }
