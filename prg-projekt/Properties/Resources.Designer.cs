@@ -63,9 +63,39 @@ namespace prg_projekt.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bad {
+            get {
+                object obj = ResourceManager.GetObject("bad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pusa_prg {
+            get {
+                object obj = ResourceManager.GetObject("pusa prg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap swedish {
             get {
                 object obj = ResourceManager.GetObject("swedish", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thum_up {
+            get {
+                object obj = ResourceManager.GetObject("thum-up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

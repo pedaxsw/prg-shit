@@ -36,11 +36,14 @@ namespace prg_projekt
             learning_text.Visible = false;
             wrongL.Visible = false;
             correctL.Visible = false;
+            ruka.Visible = false;
+            pusa.Visible = false;
+            bad.Visible = false;
 
 
         }
 
-
+  
         private void nextButton_Click(object sender, EventArgs e)
         {
             // move to the next word in the queue
@@ -83,6 +86,9 @@ namespace prg_projekt
             learning_text.Visible = false;
             wrongL.Visible = false;
             correctL.Visible = false;
+            ruka.Visible = false;
+            pusa.Visible = false;
+            bad.Visible = false;
 
 
             menu.Text = "Menu";
@@ -91,7 +97,8 @@ namespace prg_projekt
 
             wrongL.Text = "Wrong: ";
             correctL.Text = "Correct: ";
-          
+            yourAnswer.Text = "";
+
 
         }
 
@@ -126,6 +133,9 @@ namespace prg_projekt
             learn_text.Visible = true;
             start_learning.Visible = true;
             learning_text.Visible = false;
+            ruka.Visible = false;
+            pusa.Visible = false;
+            bad.Visible = false;
 
 
         }
@@ -159,13 +169,20 @@ namespace prg_projekt
             {
                 correct += 1;
                 correctL.Text = "Correct: " + correct;
+                pusa.Visible = true;
+                ruka.Visible= true;
+                bad.Visible = false;
             }
             else
             {   //"Wrong: " + wrong;
                 wrong += 1;
                 wrongL.Text = "Wrong: " + wrong;
+                bad.Visible = true;
+                pusa.Visible = false;
+                ruka.Visible = false;
             }
             yourAnswer.Text = "";
+
         }
 
         private void yourAnswer_TextChanged(object sender, EventArgs e)
@@ -183,6 +200,9 @@ namespace prg_projekt
             learning_text.Visible = true;
             wrongL.Visible = true;
             correctL.Visible = true;
+            ruka.Visible = false;
+            pusa.Visible = false;
+            bad.Visible = false;
 
 
 

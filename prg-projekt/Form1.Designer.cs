@@ -43,7 +43,13 @@
             this.learning_text = new System.Windows.Forms.Label();
             this.correctL = new System.Windows.Forms.Label();
             this.wrongL = new System.Windows.Forms.Label();
+            this.pusa = new System.Windows.Forms.PictureBox();
+            this.ruka = new System.Windows.Forms.PictureBox();
+            this.bad = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pusa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ruka)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bad)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -72,6 +78,7 @@
             // 
             // tom
             // 
+            this.tom.BackColor = System.Drawing.Color.White;
             this.tom.ErrorImage = null;
             this.tom.Image = global::prg_projekt.Properties.Resources.tom_prg;
             this.tom.InitialImage = null;
@@ -219,12 +226,47 @@
             this.wrongL.Text = "Wrong: ";
             this.wrongL.Click += new System.EventHandler(this.wrongL_Click);
             // 
+            // pusa
+            // 
+            this.pusa.BackColor = System.Drawing.Color.Transparent;
+            this.pusa.Image = global::prg_projekt.Properties.Resources.pusa_prg;
+            this.pusa.Location = new System.Drawing.Point(558, 345);
+            this.pusa.Name = "pusa";
+            this.pusa.Size = new System.Drawing.Size(79, 41);
+            this.pusa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pusa.TabIndex = 15;
+            this.pusa.TabStop = false;
+            // 
+            // ruka
+            // 
+            this.ruka.BackColor = System.Drawing.Color.White;
+            this.ruka.Image = global::prg_projekt.Properties.Resources.thum_up;
+            this.ruka.Location = new System.Drawing.Point(353, 371);
+            this.ruka.Name = "ruka";
+            this.ruka.Size = new System.Drawing.Size(176, 145);
+            this.ruka.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ruka.TabIndex = 16;
+            this.ruka.TabStop = false;
+            // 
+            // bad
+            // 
+            this.bad.Image = global::prg_projekt.Properties.Resources.bad;
+            this.bad.Location = new System.Drawing.Point(389, 345);
+            this.bad.Name = "bad";
+            this.bad.Size = new System.Drawing.Size(179, 182);
+            this.bad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bad.TabIndex = 17;
+            this.bad.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.bad);
+            this.Controls.Add(this.ruka);
+            this.Controls.Add(this.pusa);
             this.Controls.Add(this.wrongL);
             this.Controls.Add(this.correctL);
             this.Controls.Add(this.learning_text);
@@ -244,6 +286,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.tom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pusa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ruka)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +311,8 @@
         private Label learning_text;
         private Label correctL;
         private Label wrongL;
+        private PictureBox pusa;
+        private PictureBox ruka;
+        private PictureBox bad;
     }
 }
