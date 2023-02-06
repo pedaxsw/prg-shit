@@ -11,12 +11,19 @@ namespace prg_projekt
             test.Visible = false;
             learn.Visible = false;
             learn_text.Visible = false;
-            learn_start.Visible = false;
+            yourAnswer.Visible = false;
+            learning_next.Visible = false;
+            selected.Visible = false;
+            start_learning.Visible = false;
 
 
+
+        }
+
+        private void vyber()
+        {
             int correct = 0;
             int incorrect = 0;
-            Boolean check = false;
             Dictionary<string, string> swedishDictionary = new Dictionary<string, string>();
 
             swedishDictionary.Add("bok", "book");
@@ -25,9 +32,10 @@ namespace prg_projekt
             swedishDictionary.Add("bil", "car");
             swedishDictionary.Add("apelsine", "orange");
 
+            /*
             foreach (KeyValuePair<string, string> word in swedishDictionary)
             {
-                if ((yourAnswer.Text == word.Value) & (check == true))
+                if (yourAnswer.Text == word.Value) 
                 {
                     correct++;
                 }
@@ -35,8 +43,9 @@ namespace prg_projekt
                 {
                     incorrect++;
                 }
+            
             }
-
+            */
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,8 +70,10 @@ namespace prg_projekt
             menu_text.Visible = true;
             test.Visible = true;
             learn.Visible = true;
-            learn_start.Visible = false;
             learn_text.Visible = false;
+            start_learning.Visible = false;
+            selected.Visible = false;
+            yourAnswer.Visible = false;
 
         }
 
@@ -95,7 +106,8 @@ namespace prg_projekt
             learn.Visible = false;
             menu.Visible = true;
             learn_text.Visible = true;
-            learn_start.Visible = true;
+            start_learning.Visible = true;
+           
         }
 
         private void learn_text_Click(object sender, EventArgs e)
@@ -105,12 +117,20 @@ namespace prg_projekt
 
         private void learning_next_Click(object sender, EventArgs e)
         {
-            Boolean check = true;
+          
         }
 
         private void yourAnswer_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void start_learning_Click(object sender, EventArgs e)
+        {
+            selected.Visible= true;
+            yourAnswer.Visible= true;
+            start_learning.Visible= false;
+            vyber();
         }
     }
 }

@@ -36,9 +36,10 @@
             this.learn = new System.Windows.Forms.Button();
             this.test = new System.Windows.Forms.Button();
             this.learn_text = new System.Windows.Forms.Label();
-            this.learn_start = new System.Windows.Forms.Button();
             this.learning_next = new System.Windows.Forms.Button();
             this.yourAnswer = new System.Windows.Forms.TextBox();
+            this.selected = new System.Windows.Forms.Label();
+            this.start_learning = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,18 +139,6 @@
             this.learn_text.Text = "Hej! You are now in Learn section, you can learn new words here! Lycka till!";
             this.learn_text.Click += new System.EventHandler(this.learn_text_Click);
             // 
-            // learn_start
-            // 
-            this.learn_start.BackColor = System.Drawing.Color.White;
-            this.learn_start.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.learn_start.Location = new System.Drawing.Point(62, 293);
-            this.learn_start.Name = "learn_start";
-            this.learn_start.Size = new System.Drawing.Size(256, 89);
-            this.learn_start.TabIndex = 5;
-            this.learn_start.Text = "Start Learning";
-            this.learn_start.UseVisualStyleBackColor = false;
-            this.learn_start.Click += new System.EventHandler(this.learn_Click);
-            // 
             // learning_next
             // 
             this.learning_next.Location = new System.Drawing.Point(800, 323);
@@ -168,17 +157,41 @@
             this.yourAnswer.TabIndex = 9;
             this.yourAnswer.TextChanged += new System.EventHandler(this.yourAnswer_TextChanged);
             // 
+            // selected
+            // 
+            this.selected.AutoSize = true;
+            this.selected.BackColor = System.Drawing.Color.White;
+            this.selected.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selected.Location = new System.Drawing.Point(449, 121);
+            this.selected.Name = "selected";
+            this.selected.Size = new System.Drawing.Size(202, 40);
+            this.selected.TabIndex = 10;
+            this.selected.Text = "Selected word";
+            // 
+            // start_learning
+            // 
+            this.start_learning.BackColor = System.Drawing.Color.White;
+            this.start_learning.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.start_learning.Location = new System.Drawing.Point(80, 336);
+            this.start_learning.Name = "start_learning";
+            this.start_learning.Size = new System.Drawing.Size(232, 95);
+            this.start_learning.TabIndex = 11;
+            this.start_learning.Text = "Start learning";
+            this.start_learning.UseVisualStyleBackColor = false;
+            this.start_learning.Click += new System.EventHandler(this.start_learning_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.start_learning);
+            this.Controls.Add(this.selected);
             this.Controls.Add(this.yourAnswer);
             this.Controls.Add(this.learning_next);
             this.Controls.Add(this.learn_text);
             this.Controls.Add(this.test);
-            this.Controls.Add(this.learn_start);
             this.Controls.Add(this.learn);
             this.Controls.Add(this.menu_text);
             this.Controls.Add(this.Welcome_text);
@@ -204,8 +217,9 @@
         private Button learn;
         private Button test;
         private Label learn_text;
-        private Button learn_start;
         private Button learning_next;
         private TextBox yourAnswer;
+        private Label selected;
+        private Button start_learning;
     }
 }
