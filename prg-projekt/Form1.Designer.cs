@@ -46,6 +46,7 @@
             this.pusa = new System.Windows.Forms.PictureBox();
             this.ruka = new System.Windows.Forms.PictureBox();
             this.bad = new System.Windows.Forms.PictureBox();
+            this.learn_score = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pusa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruka)).BeginInit();
@@ -258,12 +259,25 @@
             this.bad.TabIndex = 17;
             this.bad.TabStop = false;
             // 
+            // learn_score
+            // 
+            this.learn_score.AutoSize = true;
+            this.learn_score.BackColor = System.Drawing.Color.White;
+            this.learn_score.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.learn_score.Location = new System.Drawing.Point(158, 83);
+            this.learn_score.Name = "learn_score";
+            this.learn_score.Size = new System.Drawing.Size(154, 47);
+            this.learn_score.TabIndex = 18;
+            this.learn_score.Text = "score je:";
+            this.learn_score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.learn_score);
             this.Controls.Add(this.bad);
             this.Controls.Add(this.ruka);
             this.Controls.Add(this.pusa);
@@ -314,5 +328,6 @@
         private PictureBox pusa;
         private PictureBox ruka;
         private PictureBox bad;
+        private Label learn_score;
     }
 }

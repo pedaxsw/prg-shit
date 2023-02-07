@@ -39,6 +39,7 @@ namespace prg_projekt
             ruka.Visible = false;
             pusa.Visible = false;
             bad.Visible = false;
+            learn_score.Visible = false;
 
 
         }
@@ -89,6 +90,7 @@ namespace prg_projekt
             ruka.Visible = false;
             pusa.Visible = false;
             bad.Visible = false;
+            learn_score.Visible = false;
 
 
             menu.Text = "Menu";
@@ -136,6 +138,7 @@ namespace prg_projekt
             ruka.Visible = false;
             pusa.Visible = false;
             bad.Visible = false;
+            learn_score.Visible = false;
 
 
         }
@@ -158,6 +161,15 @@ namespace prg_projekt
             if (currentIndex == dictionary.Count - 1)
             {
                 learning_next.Visible = false;
+                pusa.Visible = false;
+                ruka.Visible = false;
+                bad.Visible = false;
+                yourAnswer.Visible = false;
+                selected.Visible = false;
+                learning_text.Visible = false;
+                wrongL.Visible = false;
+                correctL.Visible = false;
+
             }
             else
             {
@@ -169,17 +181,83 @@ namespace prg_projekt
             {
                 correct += 1;
                 correctL.Text = "Correct: " + correct;
-                pusa.Visible = true;
-                ruka.Visible= true;
+
                 bad.Visible = false;
+                pusa.Visible = true;
+                ruka.Visible = true;
+
+                if (!(currentIndex == dictionary.Count - 1))
+                {
+                    bad.Visible = false;
+                    ruka.Visible = true;
+                    pusa.Visible = true;
+
+                    learn_score.Text = "Your score is " + correct + " answers right and " + wrong + " answers wrong.";
+                }
+                else
+                {
+                    bad.Visible = false;
+                    pusa.Visible = false;
+                    ruka.Visible = false;
+                }
+          
+
+
+              
             }
             else
             {   //"Wrong: " + wrong;
                 wrong += 1;
                 wrongL.Text = "Wrong: " + wrong;
+
                 bad.Visible = true;
                 pusa.Visible = false;
                 ruka.Visible = false;
+                if (!(currentIndex == dictionary.Count - 1))
+                {
+                    bad.Visible = true;
+                    ruka.Visible = false;
+                    pusa.Visible = false;
+                }
+                else
+                {
+                    bad.Visible = false;
+                    pusa.Visible = false;
+                    ruka.Visible = false;
+                }
+
+            }
+
+            if (currentIndex == dictionary.Count - 1)
+            {
+                learn_score.Visible= true;
+                learn_score.Text = "Your score is " + correct + " answers right and " + wrong + " answers wrong.";
+
+                if (correct > wrong)
+                {
+                    learn_score.Text = learn_score.Text + "\nGood job!";
+                    pusa.Visible = true;
+                    ruka.Visible = true;
+                    bad.Visible = false;
+
+                    if (!(wrong == 0))
+                    {
+                        learn_score.Text = learn_score.Text + "\nAlthough I think you can still improve! :)";
+                    }
+                    else
+                        learn_score.Text = learn_score.Text + "\nGood job!";
+                }
+                else
+                {
+                    learn_score.Text = learn_score.Text + "\nI think you should study more...";
+                    pusa.Visible = false;
+                    ruka.Visible = false;
+                    bad.Visible = true;
+                }
+            }
+            else
+            {
+                learn_score.Visible = false;
             }
             yourAnswer.Text = "";
 
@@ -203,6 +281,7 @@ namespace prg_projekt
             ruka.Visible = false;
             pusa.Visible = false;
             bad.Visible = false;
+            learn_score.Visible = false;
 
 
 
