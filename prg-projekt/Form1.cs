@@ -46,6 +46,7 @@ namespace prg_projekt
             test_next.Visible = false;
             trans.Visible = false;
             test_text.Visible = false;
+            testing_text.Visible = false;
 
             learn_text.Text = "You are now in Test section, you can test yourself \nfrom the words that you have learnt, Lycka Till!";
                     
@@ -105,6 +106,7 @@ namespace prg_projekt
             test_next.Visible = false;
             trans.Visible = false;
             test_text.Visible = false;
+            testing_text.Visible = false;
 
 
             menu.Text = "Menu";
@@ -359,7 +361,41 @@ namespace prg_projekt
             test_next.Visible = true;
             trans.Visible = true;
             selected.Visible = true;
+            testing_text.Visible = true;
 
+            // shuffle the order of words in the dictionary
+            int n = dictionary.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                KeyValuePair<string, string> value = dictionary[k];
+                dictionary[k] = dictionary[n];
+                dictionary[n] = value;
+            }
+
+            // set the first word
+            currentIndex = 0;
+            selected.Text = dictionary[currentIndex].Key;
+            trans.Text = dictionary[currentIndex].Value;
+
+        }
+
+        private void test_next_Click(object sender, EventArgs e)
+        {
+            currentIndex++;
+            if (currentIndex == dictionary.Count - 1)
+            {
+               // selected.Visible = false;
+               // trans.Visible = false;
+               // test_next.Visible = false;
+                currentIndex= 0;
+            }
+            else
+            {
+                selected.Text = dictionary[currentIndex].Key;
+                trans.Text = dictionary[currentIndex].Value;
+            }
         }
     }
 }

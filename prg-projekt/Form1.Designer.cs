@@ -52,6 +52,7 @@
             this.trans = new System.Windows.Forms.Label();
             this.test_next = new System.Windows.Forms.Button();
             this.test_text = new System.Windows.Forms.Label();
+            this.testing_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pusa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruka)).BeginInit();
@@ -180,11 +181,12 @@
             this.selected.AutoSize = true;
             this.selected.BackColor = System.Drawing.Color.White;
             this.selected.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.selected.Location = new System.Drawing.Point(451, 111);
+            this.selected.Location = new System.Drawing.Point(522, 124);
             this.selected.Name = "selected";
             this.selected.Size = new System.Drawing.Size(202, 40);
             this.selected.TabIndex = 10;
             this.selected.Text = "Selected word";
+            this.selected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // start_learning
             // 
@@ -306,11 +308,12 @@
             this.trans.AutoSize = true;
             this.trans.BackColor = System.Drawing.Color.White;
             this.trans.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.trans.Location = new System.Drawing.Point(467, 174);
+            this.trans.Location = new System.Drawing.Point(522, 182);
             this.trans.Name = "trans";
             this.trans.Size = new System.Drawing.Size(158, 40);
             this.trans.TabIndex = 21;
             this.trans.Text = "translation";
+            this.trans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // test_next
             // 
@@ -322,6 +325,7 @@
             this.test_next.TabIndex = 22;
             this.test_next.Text = "next";
             this.test_next.UseVisualStyleBackColor = false;
+            this.test_next.Click += new System.EventHandler(this.test_next_Click);
             // 
             // test_text
             // 
@@ -334,12 +338,24 @@
             this.test_text.TabIndex = 23;
             this.test_text.Text = "You are in Learn section, you can learn new words here.";
             // 
+            // testing_text
+            // 
+            this.testing_text.AutoSize = true;
+            this.testing_text.BackColor = System.Drawing.Color.White;
+            this.testing_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.testing_text.Location = new System.Drawing.Point(213, 39);
+            this.testing_text.Name = "testing_text";
+            this.testing_text.Size = new System.Drawing.Size(767, 40);
+            this.testing_text.TabIndex = 24;
+            this.testing_text.Text = "Here are the Swedish words and their English translation:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.testing_text);
             this.Controls.Add(this.test_text);
             this.Controls.Add(this.test_next);
             this.Controls.Add(this.trans);
@@ -402,5 +418,6 @@
         private Label trans;
         private Button test_next;
         private Label test_text;
+        private Label testing_text;
     }
 }
