@@ -43,10 +43,13 @@ namespace prg_projekt
             learn_score.Visible = false;
             question.Visible = false;
 
+            learn_text.Text = "You are now in Test section, you can test yourself \nfrom the words that you have learnt, Lycka Till!";
+                    
+
 
         }
 
-  
+
         private void nextButton_Click(object sender, EventArgs e)
         {
             // move to the next word in the queue

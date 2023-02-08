@@ -97,7 +97,7 @@
             this.Welcome_text.AutoSize = true;
             this.Welcome_text.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Welcome_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Welcome_text.Location = new System.Drawing.Point(74, 43);
+            this.Welcome_text.Location = new System.Drawing.Point(129, 53);
             this.Welcome_text.Name = "Welcome_text";
             this.Welcome_text.Size = new System.Drawing.Size(951, 40);
             this.Welcome_text.TabIndex = 3;
@@ -120,11 +120,11 @@
             // 
             this.learn.BackColor = System.Drawing.Color.White;
             this.learn.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.learn.Location = new System.Drawing.Point(66, 152);
+            this.learn.Location = new System.Drawing.Point(768, 158);
             this.learn.Name = "learn";
             this.learn.Size = new System.Drawing.Size(256, 89);
             this.learn.TabIndex = 5;
-            this.learn.Text = "Learn";
+            this.learn.Text = "Test";
             this.learn.UseVisualStyleBackColor = false;
             this.learn.Click += new System.EventHandler(this.learn_Click);
             // 
@@ -132,11 +132,11 @@
             // 
             this.test.BackColor = System.Drawing.Color.White;
             this.test.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.test.Location = new System.Drawing.Point(768, 152);
+            this.test.Location = new System.Drawing.Point(62, 174);
             this.test.Name = "test";
             this.test.Size = new System.Drawing.Size(256, 89);
             this.test.TabIndex = 6;
-            this.test.Text = "Test";
+            this.test.Text = "Learn";
             this.test.UseVisualStyleBackColor = false;
             this.test.Click += new System.EventHandler(this.test_Click);
             // 
@@ -144,7 +144,7 @@
             // 
             this.learn_text.AutoSize = true;
             this.learn_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.learn_text.Location = new System.Drawing.Point(50, 53);
+            this.learn_text.Location = new System.Drawing.Point(213, 53);
             this.learn_text.Name = "learn_text";
             this.learn_text.Size = new System.Drawing.Size(1002, 40);
             this.learn_text.TabIndex = 7;
@@ -176,7 +176,7 @@
             this.selected.AutoSize = true;
             this.selected.BackColor = System.Drawing.Color.White;
             this.selected.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.selected.Location = new System.Drawing.Point(449, 121);
+            this.selected.Location = new System.Drawing.Point(451, 111);
             this.selected.Name = "selected";
             this.selected.Size = new System.Drawing.Size(202, 40);
             this.selected.TabIndex = 10;
@@ -186,7 +186,7 @@
             // 
             this.start_learning.BackColor = System.Drawing.Color.White;
             this.start_learning.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.start_learning.Location = new System.Drawing.Point(80, 336);
+            this.start_learning.Location = new System.Drawing.Point(90, 269);
             this.start_learning.Name = "start_learning";
             this.start_learning.Size = new System.Drawing.Size(232, 95);
             this.start_learning.TabIndex = 11;
@@ -198,7 +198,7 @@
             // 
             this.learning_text.AutoSize = true;
             this.learning_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.learning_text.Location = new System.Drawing.Point(275, 53);
+            this.learning_text.Location = new System.Drawing.Point(309, 53);
             this.learning_text.Name = "learning_text";
             this.learning_text.Size = new System.Drawing.Size(521, 40);
             this.learning_text.TabIndex = 12;
