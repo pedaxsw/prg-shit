@@ -48,6 +48,10 @@
             this.bad = new System.Windows.Forms.PictureBox();
             this.learn_score = new System.Windows.Forms.Label();
             this.question = new System.Windows.Forms.Label();
+            this.start_test = new System.Windows.Forms.Button();
+            this.trans = new System.Windows.Forms.Label();
+            this.test_next = new System.Windows.Forms.Button();
+            this.test_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pusa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruka)).BeginInit();
@@ -186,11 +190,11 @@
             // 
             this.start_learning.BackColor = System.Drawing.Color.White;
             this.start_learning.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.start_learning.Location = new System.Drawing.Point(90, 269);
+            this.start_learning.Location = new System.Drawing.Point(62, 269);
             this.start_learning.Name = "start_learning";
             this.start_learning.Size = new System.Drawing.Size(232, 95);
             this.start_learning.TabIndex = 11;
-            this.start_learning.Text = "Start learning";
+            this.start_learning.Text = "Start the Test";
             this.start_learning.UseVisualStyleBackColor = false;
             this.start_learning.Click += new System.EventHandler(this.start_learning_Click);
             // 
@@ -285,12 +289,61 @@
             this.question.Text = "0/15";
             this.question.Click += new System.EventHandler(this.question_Click);
             // 
+            // start_test
+            // 
+            this.start_test.BackColor = System.Drawing.Color.White;
+            this.start_test.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.start_test.Location = new System.Drawing.Point(62, 299);
+            this.start_test.Name = "start_test";
+            this.start_test.Size = new System.Drawing.Size(232, 99);
+            this.start_test.TabIndex = 20;
+            this.start_test.Text = "Start Learning";
+            this.start_test.UseVisualStyleBackColor = false;
+            this.start_test.Click += new System.EventHandler(this.start_test_Click);
+            // 
+            // trans
+            // 
+            this.trans.AutoSize = true;
+            this.trans.BackColor = System.Drawing.Color.White;
+            this.trans.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.trans.Location = new System.Drawing.Point(467, 174);
+            this.trans.Name = "trans";
+            this.trans.Size = new System.Drawing.Size(158, 40);
+            this.trans.TabIndex = 21;
+            this.trans.Text = "translation";
+            // 
+            // test_next
+            // 
+            this.test_next.BackColor = System.Drawing.Color.White;
+            this.test_next.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.test_next.Location = new System.Drawing.Point(820, 328);
+            this.test_next.Name = "test_next";
+            this.test_next.Size = new System.Drawing.Size(191, 64);
+            this.test_next.TabIndex = 22;
+            this.test_next.Text = "next";
+            this.test_next.UseVisualStyleBackColor = false;
+            // 
+            // test_text
+            // 
+            this.test_text.AutoSize = true;
+            this.test_text.BackColor = System.Drawing.Color.White;
+            this.test_text.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.test_text.Location = new System.Drawing.Point(203, 39);
+            this.test_text.Name = "test_text";
+            this.test_text.Size = new System.Drawing.Size(744, 40);
+            this.test_text.TabIndex = 23;
+            this.test_text.Text = "You are in Learn section, you can learn new words here.";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.test_text);
+            this.Controls.Add(this.test_next);
+            this.Controls.Add(this.trans);
+            this.Controls.Add(this.start_test);
             this.Controls.Add(this.question);
             this.Controls.Add(this.learn_score);
             this.Controls.Add(this.bad);
@@ -345,5 +398,9 @@
         private PictureBox bad;
         private Label learn_score;
         private Label question;
+        private Button start_test;
+        private Label trans;
+        private Button test_next;
+        private Label test_text;
     }
 }

@@ -42,6 +42,10 @@ namespace prg_projekt
             bad.Visible = false;
             learn_score.Visible = false;
             question.Visible = false;
+            start_test.Visible = false;
+            test_next.Visible = false;
+            trans.Visible = false;
+            test_text.Visible = false;
 
             learn_text.Text = "You are now in Test section, you can test yourself \nfrom the words that you have learnt, Lycka Till!";
                     
@@ -97,6 +101,10 @@ namespace prg_projekt
             bad.Visible = false;
             learn_score.Visible = false;
             question.Visible = false;
+            start_test.Visible = false;
+            test_next.Visible = false;
+            trans.Visible = false;
+            test_text.Visible = false;
 
 
             menu.Text = "Menu";
@@ -129,7 +137,21 @@ namespace prg_projekt
 
         private void test_Click(object sender, EventArgs e)
         {
-
+            Welcome_text.Visible = false;
+            menu.Visible = false;
+            menu_text.Visible = false;
+            test.Visible = false;
+            learn.Visible = false;
+            menu.Visible = true;
+            learn_text.Visible = false;
+            start_learning.Visible = false;
+            learning_text.Visible = false;
+            ruka.Visible = false;
+            pusa.Visible = false;
+            bad.Visible = false;
+            learn_score.Visible = false;
+            start_test.Visible = true;
+            test_text.Visible = true;
         }
 
         private void learn_Click(object sender, EventArgs e)
@@ -328,6 +350,16 @@ namespace prg_projekt
         private void question_Click(object sender, EventArgs e)
         {
             question.Text = numero + " / " + "15";
+        }
+
+        private void start_test_Click(object sender, EventArgs e)
+        {
+            test_text.Visible = false;
+            start_test.Visible = false;
+            test_next.Visible = true;
+            trans.Visible = true;
+            selected.Visible = true;
+
         }
     }
 }
