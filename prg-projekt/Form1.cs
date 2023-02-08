@@ -15,6 +15,25 @@ namespace prg_projekt
             new KeyValuePair<string, string>("hej då", "goodbye"),
             new KeyValuePair<string, string>("ja", "yes"),
             new KeyValuePair<string, string>("nej", "no"),
+            new KeyValuePair<string, string>("bra", "good"),
+            new KeyValuePair<string, string>("nej", "no"),
+            new KeyValuePair<string, string>("hus", "house"),
+            new KeyValuePair<string, string>("hund", "dog"),
+            new KeyValuePair<string, string>("tåg", "train"),
+            new KeyValuePair<string, string>("sjuk", "sick"),
+            new KeyValuePair<string, string>("kunde", "could"),
+            new KeyValuePair<string, string>("läsa", "read"),
+            new KeyValuePair<string, string>("skriva", "write"),
+            new KeyValuePair<string, string>("säga", "say"),
+            new KeyValuePair<string, string>("sverige", "sweden"),
+            new KeyValuePair<string, string>("jag", "I"),
+            new KeyValuePair<string, string>("you", "du"),
+            new KeyValuePair<string, string>("är", "are"),
+            new KeyValuePair<string, string>("snabel", "trunk"),
+            new KeyValuePair<string, string>("engelska", "english"),
+            new KeyValuePair<string, string>("bara", "only"),
+            new KeyValuePair<string, string>("göra", "do"),
+            new KeyValuePair<string, string>("lärare", "teacher"),
         };
         private int wrong = 0;
         private int correct = 0;
@@ -192,7 +211,7 @@ namespace prg_projekt
             }
             selected.Text = dictionary[currentIndex].Key;
 
-            if (currentIndex == dictionary.Count - 1)
+            if (currentIndex == 15)
             {
                 learning_next.Visible = false;
                 pusa.Visible = false;
@@ -220,7 +239,7 @@ namespace prg_projekt
                 pusa.Visible = true;
                 ruka.Visible = true;
 
-                if (!(currentIndex == dictionary.Count - 1))
+                if (!(currentIndex == 15))
                 {
                     bad.Visible = false;
                     ruka.Visible = true;
@@ -247,7 +266,7 @@ namespace prg_projekt
                 bad.Visible = true;
                 pusa.Visible = false;
                 ruka.Visible = false;
-                if (!(currentIndex == dictionary.Count - 1))
+                if (!(currentIndex == 15))
                 {
                     bad.Visible = true;
                     ruka.Visible = false;
@@ -262,7 +281,7 @@ namespace prg_projekt
 
             }
 
-            if (currentIndex == dictionary.Count - 1)
+            if (currentIndex == 15)
             {
                 learn_score.Visible= true;
                 learn_score.Text = "Your score is " + correct + " answers right and " + wrong + " answers wrong.";
@@ -386,9 +405,6 @@ namespace prg_projekt
             currentIndex++;
             if (currentIndex == dictionary.Count - 1)
             {
-               // selected.Visible = false;
-               // trans.Visible = false;
-               // test_next.Visible = false;
                 currentIndex= 0;
             }
             else
