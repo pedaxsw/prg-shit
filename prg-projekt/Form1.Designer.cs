@@ -47,6 +47,7 @@
             this.ruka = new System.Windows.Forms.PictureBox();
             this.bad = new System.Windows.Forms.PictureBox();
             this.learn_score = new System.Windows.Forms.Label();
+            this.question = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pusa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ruka)).BeginInit();
@@ -271,12 +272,26 @@
             this.learn_score.Text = "score je:";
             this.learn_score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // question
+            // 
+            this.question.AutoSize = true;
+            this.question.BackColor = System.Drawing.Color.White;
+            this.question.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.question.ForeColor = System.Drawing.Color.Red;
+            this.question.Location = new System.Drawing.Point(74, 53);
+            this.question.Name = "question";
+            this.question.Size = new System.Drawing.Size(73, 40);
+            this.question.TabIndex = 19;
+            this.question.Text = "0/15";
+            this.question.Click += new System.EventHandler(this.question_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::prg_projekt.Properties.Resources.swedish;
             this.ClientSize = new System.Drawing.Size(1134, 661);
+            this.Controls.Add(this.question);
             this.Controls.Add(this.learn_score);
             this.Controls.Add(this.bad);
             this.Controls.Add(this.ruka);
@@ -329,5 +344,6 @@
         private PictureBox ruka;
         private PictureBox bad;
         private Label learn_score;
+        private Label question;
     }
 }

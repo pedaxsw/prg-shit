@@ -19,6 +19,7 @@ namespace prg_projekt
         private int wrong = 0;
         private int correct = 0;
         private int currentIndex = 0;
+        private int numero = 0;
         private Random random = new Random();
 
         public Form1()
@@ -40,6 +41,7 @@ namespace prg_projekt
             pusa.Visible = false;
             bad.Visible = false;
             learn_score.Visible = false;
+            question.Visible = false;
 
 
         }
@@ -91,6 +93,7 @@ namespace prg_projekt
             pusa.Visible = false;
             bad.Visible = false;
             learn_score.Visible = false;
+            question.Visible = false;
 
 
             menu.Text = "Menu";
@@ -100,6 +103,8 @@ namespace prg_projekt
             wrongL.Text = "Wrong: ";
             correctL.Text = "Correct: ";
             yourAnswer.Text = "";
+            question.Text = "0" + " / " + "15";
+            numero = 0;
 
 
         }
@@ -150,6 +155,8 @@ namespace prg_projekt
 
         private void learning_next_Click(object sender, EventArgs e)
         {
+            numero += 1;
+            question.Text = numero + " / " + "15";
             // move to the next word in the queue
             currentIndex++;
             if (currentIndex == dictionary.Count)
@@ -232,6 +239,9 @@ namespace prg_projekt
             {
                 learn_score.Visible= true;
                 learn_score.Text = "Your score is " + correct + " answers right and " + wrong + " answers wrong.";
+                question.Visible = false;
+                question.Text = "0" + " / " + "15";
+                numero = 0;
 
                 if (correct > wrong)
                 {
@@ -282,6 +292,7 @@ namespace prg_projekt
             pusa.Visible = false;
             bad.Visible = false;
             learn_score.Visible = false;
+            question.Visible = true;
 
 
 
@@ -309,6 +320,11 @@ namespace prg_projekt
         private void wrongL_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void question_Click(object sender, EventArgs e)
+        {
+            question.Text = numero + " / " + "15";
         }
     }
 }
